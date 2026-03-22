@@ -2,10 +2,6 @@
 
 This repo used for submit assignment (take home exam only)
 
-## Skooldio Register - Playwright Test Framework
-
-> Data-Driven Testing แบบ Robot Framework Test Template pattern
-
 ## 📌 Architecture
 
 ```
@@ -51,6 +47,7 @@ npm run report
 | `npm run report` | เปิด HTML report |
 
 ## 📋 Test Cases (25 cases)
+พบว่ามี bug อยู่ ในแง่ของการ register ซ้ำและพบว่าสามารถทำได้ซึ่งในความเป็นจริงไม่ควรเพราะอาจจะทำให้ database บวมได้ครับ
 
 ### Negative — ฟิลด์ว่าง (5 cases)
 
@@ -154,8 +151,3 @@ npm run report
 // → auto_1711036800000@yopmail.com
 ```
 
-## 🔧 หมายเหตุทางเทคนิค
-
-- **Popup handling:** เว็บ Skooldio มี promotion popup เป็น iframe จาก `landingipopups.com` ที่ครอบเต็มจอ (`position:fixed; z-index:999999`) — ระบบจะลบ iframe นี้ออกจาก DOM อัตโนมัติก่อน test ทุกครั้ง
-- **Cookie consent:** ปุ่ม "ยอมรับทั้งหมด" จะถูกกดปิดอัตโนมัติ
-- **Test results ล่าสุด:** 24 passed, 1 failed (known bug)
