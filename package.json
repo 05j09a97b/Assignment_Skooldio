@@ -1,0 +1,14 @@
+{
+  "name": "skooldio-register-tests",
+  "version": "1.0.0",
+  "description": "Data-driven Playwright test framework for Skooldio registration page (Robot Framework style)",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}
